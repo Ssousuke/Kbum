@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
-using Kbum.Funcionario.Api.Data.Dto.FuncionarioDto;
-namespace Kbum.Funcionario.Api.Data.ConfigMapping
+using Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto;
+using Kbum.Usuarios.Api.Models;
+
+namespace Kbum.Usuarios.Api.Data.ConfigMapping
 {
     public class ConfigMapping
     {
@@ -9,10 +11,10 @@ namespace Kbum.Funcionario.Api.Data.ConfigMapping
             var mapping = new MapperConfiguration(
                 config =>
                 {
-                    config.CreateMap<Models.Funcionario, FuncCreate>().ReverseMap();
-                    config.CreateMap<Models.Funcionario, FuncList>().ReverseMap();
-                    config.CreateMap<Models.Funcionario, FuncDelete>().ReverseMap();
-                    config.CreateMap<Models.Funcionario, FuncUpdate>().ReverseMap();
+                    config.CreateMap<Usuario, UsuarioCreate>().ReverseMap();
+                    config.CreateMap<Usuario, UsuarioList>().ReverseMap();
+                    config.CreateMap<Usuario, UsuarioDelete>().ReverseMap();
+                    config.CreateMap<Usuario, UsuarioUpdate>().ReverseMap();
                 }
             );
             return mapping;

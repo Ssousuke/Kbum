@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Kbum.Usuarios.Api.Models;
+using Microsoft.EntityFrameworkCore;
 
-namespace Kbum.Funcionario.Api.Data.Context
+namespace Kbum.Usuarios.Api.Data.Context
 {
     public class AppDbContext : DbContext
     {
@@ -10,6 +11,6 @@ namespace Kbum.Funcionario.Api.Data.Context
 
         }
 
-        public DbSet<Models.Funcionario> Funcionarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }

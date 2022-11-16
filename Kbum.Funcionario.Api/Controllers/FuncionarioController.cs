@@ -1,56 +1,56 @@
-﻿using Kbum.Funcionario.Api.Data.Dto.FuncionarioDto;
-using Kbum.Funcionario.Api.Services.Interface;
+﻿using Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto;
+using Kbum.Usuarios.Api.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Kbum.Funcionario.Api.Controllers
+namespace Kbum.Usuarios.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
-    public class FuncionarioController : ControllerBase
+    public class UsuarioionarioController : ControllerBase
     {
-        public IFuncionarioRepository _funcionarioRepository;
+        public IUsuarioionarioRepository _UsuarioionarioRepository;
 
-        public FuncionarioController(IFuncionarioRepository funcionarioRepository)
+        public UsuarioionarioController(IUsuarioionarioRepository UsuarioionarioRepository)
         {
-            _funcionarioRepository = funcionarioRepository;
+            _UsuarioionarioRepository = UsuarioionarioRepository;
         }
 
         [HttpGet("listar")]
-        public async Task<ActionResult<IEnumerable<FuncList>>> ListarFuncionarios()
+        public async Task<ActionResult<IEnumerable<UsuarioList>>> ListarUsuarioionarios()
         {
-            IEnumerable<FuncList> funcionarios = await _funcionarioRepository.ListarFuncionarios();
-            return Ok(funcionarios);
+            IEnumerable<UsuarioList> Usuarioionarios = await _UsuarioionarioRepository.ListarUsuarioionarios();
+            return Ok(Usuarioionarios);
         }
 
         [HttpGet("buscar/{id}")]
-        public async Task<ActionResult<FuncList>> BuscarPorId(long id)
+        public async Task<ActionResult<UsuarioList>> BuscarPorId(long id)
         {
-            FuncList funcionario = await _funcionarioRepository.BuscarPorId(id);
-            return Ok(funcionario);
+            UsuarioList Usuarioionario = await _UsuarioionarioRepository.BuscarPorId(id);
+            return Ok(Usuarioionario);
         }
 
         [HttpPost("adicionar")]
-        public async Task<ActionResult<FuncCreate>> AdicionarFuncionario(FuncCreate funcCreate)
+        public async Task<ActionResult<UsuarioCreate>> AdicionarUsuarioionario(UsuarioCreate UsuarioCreate)
         {
-            if (funcCreate == null)
+            if (UsuarioCreate == null)
                 return BadRequest();
-            FuncCreate funcionario = await _funcionarioRepository.AdicionarFuncionario(funcCreate);
-            return Ok(funcionario);
+            UsuarioCreate Usuarioionario = await _UsuarioionarioRepository.AdicionarUsuarioionario(UsuarioCreate);
+            return Ok(Usuarioionario);
         }
 
         [HttpPut("editar/{id}")]
-        public async Task<ActionResult<FuncUpdate>> EditarFuncionario([FromBody] FuncUpdate funcUpdate)
+        public async Task<ActionResult<UsuarioUpdate>> EditarUsuarioionario([FromBody] UsuarioUpdate UsuarioUpdate)
         {
-            if (funcUpdate == null) return BadRequest();
-            var funcionario = await _funcionarioRepository.AtualizarFuncionario(funcUpdate);
-            return Ok(funcionario);
+            if (UsuarioUpdate == null) return BadRequest();
+            var Usuarioionario = await _UsuarioionarioRepository.AtualizarUsuarioionario(UsuarioUpdate);
+            return Ok(Usuarioionario);
         }
 
         [HttpDelete("deletar/{id}")]
-        public async Task<ActionResult<bool>> DelatarFuncionario(long id)
+        public async Task<ActionResult<bool>> DelatarUsuarioionario(long id)
         {
-            await _funcionarioRepository.DeletarFuncionario(id);
+            await _UsuarioionarioRepository.DeletarUsuarioionario(id);
             return Ok();
         }
     }

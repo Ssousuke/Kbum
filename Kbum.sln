@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{029667CD-F8BA-484C-9322-EAB532EED19C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kbum.Funcionario.Api", "Kbum.Funcionario.Api\Kbum.Funcionario.Api.csproj", "{55B92264-4325-495E-8A0D-7B83780354E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kbum.Usuarios.Api", "Kbum.Funcionario.Api\Kbum.Usuarios.Api.csproj", "{55B92264-4325-495E-8A0D-7B83780354E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kbum.Tarefas.Api", "Kbum.Tarefas\Kbum.Tarefas.Api.csproj", "{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{55B92264-4325-495E-8A0D-7B83780354E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B92264-4325-495E-8A0D-7B83780354E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B92264-4325-495E-8A0D-7B83780354E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{55B92264-4325-495E-8A0D-7B83780354E5} = {029667CD-F8BA-484C-9322-EAB532EED19C}
+		{2BEA1596-D2A0-457B-BD4A-CAA5B6C74226} = {029667CD-F8BA-484C-9322-EAB532EED19C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BCFFE8FF-D696-48A3-BC34-B57701D87B46}

@@ -1,8 +1,8 @@
 using AutoMapper;
-using Kbum.Funcionario.Api.Data.ConfigMapping;
-using Kbum.Funcionario.Api.Data.Context;
-using Kbum.Funcionario.Api.Services.Interface;
-using Kbum.Funcionario.Api.Services.Repository;
+using Kbum.Usuarios.Api.Data.ConfigMapping;
+using Kbum.Usuarios.Api.Data.Context;
+using Kbum.Usuarios.Api.Services.Interface;
+using Kbum.Usuarios.Api.Services.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +21,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
-builder.Services.AddScoped<IFuncionarioRepository, FuncRepository>();
+builder.Services.AddScoped<IUsuarioionarioRepository, UsuarioRepository>();
 var app = builder.Build();
 
 
