@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Kbum.Usuarios.Api.Data.Context;
-using Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto;
+using Kbum.Usuarios.Api.Data.Dto.FuncionarioDto;
 using Kbum.Usuarios.Api.Models;
 using Kbum.Usuarios.Api.Services.Interface;
 using Microsoft.EntityFrameworkCore;

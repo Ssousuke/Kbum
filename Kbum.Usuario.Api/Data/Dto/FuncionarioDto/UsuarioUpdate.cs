@@ -1,6 +1,6 @@
-﻿namespace Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto
+﻿namespace Kbum.Usuarios.Api.Data.Dto.FuncionarioDto
 {
-    public class UsuarioList
+    public class UsuarioUpdate
     {
         public long UsuarioId { get; set; }
         public string Nome { get; set; }

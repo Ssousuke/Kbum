@@ -1,4 +1,4 @@
-﻿using Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto;
+﻿using Kbum.Usuarios.Api.Data.Dto.FuncionarioDto;
 
 namespace Kbum.Usuarios.Api.Services.Interface
 {

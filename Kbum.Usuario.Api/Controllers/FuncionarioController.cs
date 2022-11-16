@@ -1,4 +1,4 @@
-﻿using Kbum.Usuarios.Api.Data.Dto.UsuarioionarioDto;
+﻿using Kbum.Usuarios.Api.Data.Dto.FuncionarioDto;
 using Kbum.Usuarios.Api.Services.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
