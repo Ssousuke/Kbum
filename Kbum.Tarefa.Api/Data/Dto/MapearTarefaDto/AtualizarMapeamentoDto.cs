@@ -1,11 +1,10 @@
 ﻿using Kbum.Tarefas.Api.Models.Enums;
 using Kbum.Tarefas.Api.Models;
 
-namespace Kbum.Tarefas.Api.Data.Dto.MapearTaredaDto
+namespace Kbum.Tarefas.Api.Data.Dto.MapearTarefaDto
 {
-    public class ListarMapeamentosDto
+    public class AtualizarMapeamentoDto
     {
-        public Guid MapearTarefaId { get; set; }
         public string NomeDoMapemento { get; set; }
         public string DescricaoDoMapeamento { get; set; }
         public Tarefa? Tarefa { get; set; }

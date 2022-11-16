@@ -1,4 +1,4 @@
-﻿using Kbum.Tarefas.Api.Data.Dto.MapearTaredaDto;
+﻿using Kbum.Tarefas.Api.Data.Dto.MapearTarefaDto;
 using Kbum.Tarefas.Api.Services.Interfaces;
 
 namespace Kbum.Tarefas.Api.Services.Repository

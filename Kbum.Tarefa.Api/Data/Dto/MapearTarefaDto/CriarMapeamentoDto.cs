@@ -1,7 +1,7 @@
 ﻿using Kbum.Tarefas.Api.Models.Enums;
 using Kbum.Tarefas.Api.Models;
 
-namespace Kbum.Tarefas.Api.Data.Dto.MapearTaredaDto
+namespace Kbum.Tarefas.Api.Data.Dto.MapearTarefaDto
 {
     public class CriarMapeamentoDto
     {

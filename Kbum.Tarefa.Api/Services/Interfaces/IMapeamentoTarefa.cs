@@ -1,4 +1,4 @@
-﻿using Kbum.Tarefas.Api.Data.Dto.MapearTaredaDto;
+﻿using Kbum.Tarefas.Api.Data.Dto.MapearTarefaDto;
 using Kbum.Tarefas.Api.Data.Dto.SubTarefaDto;
 using Kbum.Tarefas.Api.Data.Dto.TarefaDto;
 
